@@ -1,7 +1,7 @@
 body {
-<!-- background: #F9EFE7 url(images/ranchPic1_experiment2.jpg) no-repeat; -->
-  background: #F9EFE7 url(images/ranchPic1_experiment2.jpg) repeat;
-  background-image: url(images/ranchPic1_experiment2.jpg);
+<!-- background: #F9EFE7 url(ranchPic1_experiment2.jpg) no-repeat; -->
+  background: #F9EFE7 url(ranchPic1_experiment2.jpg) repeat;
+  background-image: url(ranchPic1_experiment2.jpg);
 background-repeat-x: no-repeat;
 background-repeat-y: no-repeat;
 background-attachment: initial;
@@ -30,5 +30,5 @@ MY_H4 {
   font-weight:bold
 }
 
-<!-- background: #F9EFE7 url(images/ranchPic1_experiment2.jpg) repeat; -->
-<!-- background-image: url(images/ranchPic1_experiment2.jpg); -->
+<!-- background: #F9EFE7 url(ranchPic1_experiment2.jpg) repeat; -->
+<!-- background-image: url(ranchPic1_experiment2.jpg); -->
