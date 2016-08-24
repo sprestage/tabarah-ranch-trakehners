@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  get '/contact' => 'static#contact'
-  get '/herd' => 'static#herd'
-  get '/forsale' => 'static#forsale'
-  get '/pedigrees' => 'static#pedigrees'
+
+  get '/herd' => 'home#herd'
+  get '/forsale' => 'home#forsale'
+  get '/pedigrees' => 'home#pedigrees'
+  get '/contact' => 'home#contact'
+  get '/joriah' => 'home#joriah'
+  get '/jakira' => 'home#jakira'
+  get '/jaedorin' => 'home#jaedorin'
+  get '/jaegerin' => 'home#jaegerin'
+  get '/dorin_pedigree' => 'home#dorin_pedigree'
+  get '/gerin_pedigree' => 'home#gerin_pedigree'
+  get '/kira_pedigree' => 'home#kira_pedigree'
+  get '/jori_pedigree' => 'home#jori_pedigree'
 
 
   # You can have the root of your site routed with "root"

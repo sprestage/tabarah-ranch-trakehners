@@ -10,7 +10,10 @@
 <!-- Meta tags are used by many search engines to index websites.  *author's note to self -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="keywords" content="Trakehner horses for sale warmblood bloodlines breed Washington Abdullah Herzzauber Nemo Ichi-ban dressage jumping" />
-<meta name="description" content="Tabarah Ranch strives to breed the ideal Trakehner for both the amature and professional rider while adhering to the ideals of the Verband and the ATA, seeking beauty and harmony in every aspect of our horses." />
+<meta name="description" content="Tabarah Ranch strives to breed the ideal
+Trakehner for both the amature and professional rider while adhering to the
+ideals of the Verband and the ATA, seeking beauty and harmony in every aspect
+of our horses." />
 
 	<LINK href="homestylefront.css" rel="stylesheet" type="text/css" />
 	<LINK rel="shortcut icon" href="favicon.ico">
@@ -22,52 +25,6 @@
 
 <div style="float:left; width:1%; height:100%;margin-bottom:-80px;">&nbsp;</div>
 <div id="main"> <!--begin main-->
-
-	<div class="breadcrumbs"> <!-- Begin navigation (breadcrumbs) section -->
-
-	<center>
-	<table border="0" cellpadding="0" width='85%'>
-	<tr><td>
-	  <table style="border: 0px solid #000000; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="100%">
-	    <tr>
-	      <td rowspan='1' width='15%' align="center">
-					<MY_H4>
-						<%= link_to 'Tabarah Ranch', root_path %>
-					</MY_H4>
-	      </td>
-	      <td rowspan='1' width='15%' align="center">
-					<a href="herd.html"><MY_H4>Our Herd</MY_H4></a>
-	      </td>
-	      <td rowspan='1' width='15%' align="center">
-					<a href="forsale.html"><MY_H4>For Sale</MY_H4></a>
-	      </td>
-	      <td rowspan='1' width='15%' align="center">
-					<a href="pedigrees.html"><MY_H4>Pedigrees</MY_H4></a>
-	      </td>
-<!--
-	      <td rowspan='1' width='15%' align="center">
-		<a href="news.html"><MY_H4>Latest News</MY_H4></a>
-	      </td>
-	      <td rowspan='1' width='15%' align="center">
-		<a href="gallery.html"><MY_H4>Photo Album</MY_H4></a>
-	      </td>
--->
-	      <td rowspan='1' width='15%' align="center">
-					<a href="contact.html"><MY_H4>Contact Us</MY_H4></a>
-	      </td>
-<!--
-	      <td rowspan='1' width='15%' align="center">
-		<a href="links.html"><MY_H4>Links</MY_H4></a>
-links (ATA, Trakehner Verband, USDF, USEF, Blessed Fields (Ichi-Ban), Meadowview (Nemo, Herrzauber), Emma Dye Dressage)
-	      </>
--->
-	  </table>
-	</td> </tr>
-	</table>
-	</center>
-
-	</div> <!-- End navigation (breadcrumbs) section -->
-
 	<br> <br>
 
 	<div class="tabarahRanchTrakehners">  <!-- Begin Tabarah Ranch logo section -->
@@ -77,11 +34,15 @@ links (ATA, Trakehner Verband, USDF, USEF, Blessed Fields (Ichi-Ban), Meadowview
 	  <table style="border: 0px solid #000000; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="100%">
 	    <tr>
 	      <td rowspan='2' width='25%' align="center">
-		<img src="images/trakehnerLogoTransparent.jpg" alt="ATA brand/logo" width="125" height="110">
+					<%= render 'shared/trakehner_logo' %>
+					<!-- <%= image_tag( "images/trakehnerLogoTransparent.jpg", size: "125x110", alt: "ATA brand/logo" ) %> -->
+					<!-- <img src="images/trakehnerLogoTransparent.jpg" alt="ATA brand/logo" width="125" height="110"> -->
 	      </td>
 	      <td rowspan='1' width='50%' align="center"> <MY_H1>Tabarah Ranch</MY_H1> </td>
 	      <td rowspan='2' width='25%' align="center">
-		<img src="images/trakehnerLogoTransparent.jpg" alt="ATA brand/logo" width="125" height="110">
+					<%= render 'shared/trakehner_logo' %>
+					<!-- <%= image_tag( "images/trakehnerLogoTransparent.jpg", size: "125x110", alt: "ATA brand/logo" ) %> -->
+					<!-- <img src="images/trakehnerLogoTransparent.jpg" alt="ATA brand/logo" width="125" height="110"> -->
 	      </td>
 	    </tr><tr>
 	      <td rowspan='1' width='50%' align="center"> <MY_H1>Trakehners</MY_H1> </td>
@@ -94,50 +55,27 @@ links (ATA, Trakehner Verband, USDF, USEF, Blessed Fields (Ichi-Ban), Meadowview
 
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-<P>Nestled in the Western Cascade foothills, Tabarah Ranch is a small scale,
+<p>Nestled in the Western Cascade foothills, Tabarah Ranch is a small scale,
 	family home breeding operation, offering thoughfully bred young Trakehners
-	<a href="forsale.html" class="inline">for sale</a>.  We strive to raise the
+	<%= link_to "for sale", forsale_path %>.  We strive to raise the
 	right partner for both the amateur looking for the special, quality friend and
 	for the professional looking for the right partner.  Gentle, eager temperment
-	with brilliant movement are the hallmarks of our mare line.</P>
+	with brilliant movement are the hallmarks of our mare line.</p>
 
-<P>Our <a href="herd.html" class="inline">Trakehner ladies</a> represent the
-	bloodlines of Abdullah, E.H.Herzzauber, Nemo, and Ichi-Ban</P>
+<p>Our <%= link_to "Trakehner ladies", herd_path %> represent the
+	bloodlines of Abdullah, E.H.Herzzauber, Nemo, and Ichi-Ban</p>
 
-<P>Careful selection of the <a href="jaegerin.html" class="inline">foundation
-	mare</a> for our still young breeding program has graced our Trakehner ladies
+<p>Careful selection of the <%= link_to "foundation mare", jaegerin_path %> for
+	our still young breeding program has graced our Trakehner ladies
 	with inspection scores of 54, with the honor of high point mare at each ATA
-	inspection we have attended.</P>
+	inspection we have attended.</p>
 
-<P>If we have inspired you and you find yourself in the Pacific NorthWest,
-	please <a href="contact.html" class="inline">contact us</a> as we would love
-	to have you out for tea and to meet our herd.</P>
+<p>If we have inspired you and you find yourself in the Pacific NorthWest,
+	please <%= link_to "contact us", contact_path %> as we would love
+	to have you out for tea and to meet our herd.</p>
 
 </div> <!--end main-->
 
-
-<div id="footer">
-
-	<div class="notice">Copyright 2011, Susan Prestage, all rights reserved
-	  <br>Photos by Susan Prestage unless noted
-	  <br>
-	</div>
-
-	<div class="ranchAddress">
-	  Tabarah Ranch Trakehners
-	  <br>Snoqualmie Valley in Washington state
-	  <br>Susan Prestage
-	  <br>425-919-3122
-	</div>
-
-	<div class="webAddress">
-	  email: <a href="mailto:tabarahranchtrakehners@gmail.com&amp;subject=Inquiry for Tabarah Ranch Trakehners" target="new" class="web">tabarahranchtrakehners@gmail.com</a>
-	  <br> <a href="index.html" class="web">index.html</a>
-	  <br> <a href="sitemap.txt" class="web">Sitemap</a>
-	  <br>
-	</div>
-
-</div> <!--end footer-->
 </ranch_background>
 </body>
 <script>
@@ -148,6 +86,5 @@ links (ATA, Trakehner Verband, USDF, USEF, Blessed Fields (Ichi-Ban), Meadowview
 
   ga('create', 'UA-46268095-4', 'tabarahranchtrakehners.com');
   ga('send', 'pageview');
-
 </script>
 </html>

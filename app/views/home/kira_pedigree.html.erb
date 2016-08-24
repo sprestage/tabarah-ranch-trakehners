@@ -6,7 +6,7 @@
 		font-family: 14pt;
 		text-align: center;
 		vertical-align: middle;
-		border-collapse: collapse; 
+		border-collapse: collapse;
 		border: 1px solid #000000;
 	}
 
@@ -17,13 +17,15 @@
 		font-family: 14pt;
 		text-align: center;
 		vertical-align: middle;
-		border-collapse: collapse; 
+		border-collapse: collapse;
 		border: 1px solid #000000;
 	}
 
         h1 {font-size:600%}
 
 </style>
+
+<title>Jakira's Pedigree</title>
 
 <div class="trakehnerHorseName">
 <center>
@@ -61,13 +63,17 @@
      </tr><tr>
 	<td rowspan='1' width='25%' class='female'>Inderin</td>
      </tr><tr>
-	<td rowspan='4' width='25%' class='female'><A href="dorinPedigree.html" class="inline">J&auml;dorin</A></td>
+	<td rowspan='4' width='25%' class='female'>
+		<%= link_to 'Jädorin', dorin_pedigree_path %>
+	</td>
 	<td rowspan='2' width='25%' class='male'>E.H. Herrzauber</td>
 	<td rowspan='1' width='25%' class='male'>Marduc</td>
      </tr><tr>
 	<td rowspan='1' width='25%' class='female'>Herzminze</td>
      </tr><tr>
-	<td rowspan='2' width='25%' class='female'><A href="gerinPedigree.html" class="inline">J&auml;gerin</A></td>
+	<td rowspan='2' width='25%' class='female'>
+		<%= link_to 'Jägerin', gerin_pedigree_path %>
+	</td>
 	<td rowspan='1' width='25%' class='male'>Nemo</td>
      </tr><tr>
 	<td rowspan='1' width='25%' class='female'>Jamilah</td>
@@ -78,4 +84,3 @@
      </table>
 </center>
 </div>
-
