@@ -22,6 +22,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+
+# Make Minitest generally available for Heroku deploy
+gem 'minitest-rails'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -39,6 +43,20 @@ gem 'rails_12factor', group: :production
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # More minitest
+    gem 'minitest'
+    gem 'minitest-focus'
+    gem 'minitest-reporters'
+  # Capybara
+    gem 'minitest-rails-capybara'
+    gem 'launchy'
+  # pry inline debugger
+    gem 'pry-rails'
+    gem 'pry-byebug'
+    gem 'pry-doc'
+  # Figaro for removing secret keys from github
+    gem 'figaro'
 end
 
 group :test do
