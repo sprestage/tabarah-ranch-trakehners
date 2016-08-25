@@ -1,0 +1,88 @@
+/* line 1, /Users/susan/Documents/myProjects/railsLearning/tabarah-ranch-trakehners/app/assets/stylesheets/common.css.sass */
+.center {
+  text-align: center;
+}
+
+/* line 4, /Users/susan/Documents/myProjects/railsLearning/tabarah-ranch-trakehners/app/assets/stylesheets/common.css.sass */
+.clear_div {
+  height: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+}
+
+/* line 10, /Users/susan/Documents/myProjects/railsLearning/tabarah-ranch-trakehners/app/assets/stylesheets/common.css.sass */
+.copyright_notice {
+  font-size: 67%;
+}
+
+/* line 13, /Users/susan/Documents/myProjects/railsLearning/tabarah-ranch-trakehners/app/assets/stylesheets/common.css.sass */
+.male {
+  background-color: #CCCCCC;
+  color: #000000;
+  font-family: Arial;
+  font-family: 14pt;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+/* line 23, /Users/susan/Documents/myProjects/railsLearning/tabarah-ranch-trakehners/app/assets/stylesheets/common.css.sass */
+.female {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial;
+  font-family: 14pt;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+body {
+  background: url(ranchPic1_experiment2.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #F9EFE7;
+  font-family: Georgia, 'Times New Roman', 'Times Roman', Times, Roman, serif;
+}
+
+MY_H1 {
+  font-size:300%; font-weight:bold
+}
+
+MY_H2 {
+  font-size:400%; font-weight:bold
+}
+
+MY_H3 {
+  font-size:200%
+}
+
+MY_H4 {
+  font-weight:bold
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ .copyright_notice
+   font-size: 67%
