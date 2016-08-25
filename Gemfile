@@ -5,8 +5,7 @@ ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,19 +43,19 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
-  # More minitest
-    gem 'minitest'
-    gem 'minitest-focus'
-    gem 'minitest-reporters'
-  # Capybara
-    gem 'minitest-rails-capybara'
-    gem 'launchy'
-  # pry inline debugger
-    gem 'pry-rails'
-    gem 'pry-byebug'
-    gem 'pry-doc'
-  # Figaro for removing secret keys from github
-    gem 'figaro'
+# More minitest
+  gem 'minitest'
+  gem 'minitest-focus'
+  gem 'minitest-reporters'
+# Capybara
+  gem 'minitest-rails-capybara'
+  gem 'launchy'
+# pry inline debugger
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+# Figaro for removing secret keys from github
+  gem 'figaro'
 end
 
 group :test do
