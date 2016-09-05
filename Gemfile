@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 # Specify ruby version for Heroku deploy
-ruby '2.1.4'
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
-
+gem 'rails', '4.2.7.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -21,27 +20,23 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Make Minitest generally available for Heroku deploy
 gem 'minitest-rails'
 
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-gem 'pg'
-
-group :production do
-  gem 'rails_12factor'
-
-  # Use unicorn as the app server
-  gem 'unicorn'
-end
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+group :production do
+  # For heroku deployment
+  gem 'rails_12factor'
+
+  # Use Unicorn as the app server
+  gem 'unicorn'
+end
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -49,19 +44,18 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
-# More minitest
+  # More minitest
   gem 'minitest'
   gem 'minitest-focus'
   gem 'minitest-reporters'
-# Capybara
+  # Capybara
   gem 'minitest-rails-capybara'
   gem 'launchy'
-# pry inline debugger
+  # pry inline debugger
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc'
-# Figaro for removing secret keys from github
+  # Figaro for removing secret keys from github
   gem 'figaro'
 end
 
