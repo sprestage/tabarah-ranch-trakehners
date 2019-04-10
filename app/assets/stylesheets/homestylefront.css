@@ -27,3 +27,8 @@ MY_H3 {
 MY_H4 {
   font-weight:bold
 }
+
+MY_H5 {
+  font-size:200%;
+  color:#B30D0D
+}
