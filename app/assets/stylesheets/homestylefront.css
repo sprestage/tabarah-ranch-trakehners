@@ -1,13 +1,14 @@
 body {
   background: url(ranchPic1_experiment2.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: initial;
   background-position-x: initial;
   background-position-y: initial;
   background-origin: initial;
   background-clip: initial;
   background-color: #F9EFE7;
+
   font-family: Georgia, 'Times New Roman', 'Times Roman', Times, Roman, serif;
 }
 
